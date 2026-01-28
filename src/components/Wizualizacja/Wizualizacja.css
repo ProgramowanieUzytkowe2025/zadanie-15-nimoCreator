@@ -1,0 +1,12 @@
+.wizualizacja {
+    gap: 1rem;
+}
+
+.wizualizacja > canvas {
+    width: clamp(20rem, 100%, 60rem);
+    border-radius: 0.5rem;
+}
+
+.wizualizacja button {
+    align-self: flex-end;
+}

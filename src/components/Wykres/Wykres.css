@@ -1,0 +1,4 @@
+.wykres > canvas {
+    width: clamp(20rem, 100%, 60rem);
+    border-radius: 0.5rem;
+}

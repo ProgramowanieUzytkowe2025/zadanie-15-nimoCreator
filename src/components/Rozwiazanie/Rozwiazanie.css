@@ -1,0 +1,75 @@
+.solutionSteps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem 0.25rem;
+
+    padding: var(--space-4);
+}
+.point {
+    width: 2rem;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.point .dot {
+    font-size: 1.5rem;
+    color: var(--accent-500);
+}
+.point .coords {
+    position: absolute;
+    top: 100%;
+    white-space: nowrap;
+    font-size: var(--font-xs);
+    color: var(--gray-500);
+}
+.point .name {
+    position: absolute;
+    bottom: 100%;
+    white-space: nowrap;
+}
+
+
+.arrow {
+    flex-grow: 1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: stretch;
+
+    position: relative;
+}
+.arrow .distance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    text-align: center;
+
+    padding: 0 var(--space-4);
+}
+.arrow .distance::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0.125rem;
+    border-radius: 0.125rem;
+    background-color: var(--text-primary);
+    z-index: -1;
+}
+.arrow .arrowHead {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate( calc( -50% - 2px), calc( -50% + 3px ));
+}
+
+
+
